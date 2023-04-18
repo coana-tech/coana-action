@@ -1,4 +1,4 @@
 # Container image that runs your code
-FROM coana/coana:2.1.0
+FROM coana/coana:rc
 
-CMD ["coana", "."]
+CMD ["coana", '--silent', '--print-markdown-report' "."]
