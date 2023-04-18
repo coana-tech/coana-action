@@ -1,0 +1,6 @@
+# action.yml
+name: 'Coana'
+description: 'Run the Coana CLI tool'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
