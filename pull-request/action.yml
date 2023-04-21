@@ -1,0 +1,14 @@
+name: 'Coana Pull Request Comment'
+description: 'Add the Coana markdown report as a pull request comment'
+runs:
+  using: "composite"
+  steps:
+    - name: Run Coana CLI
+      id: coana-cli
+      uses: coana-tech/coana-action/markdown-report@v6
+
+    # updates existing comment if it already exists
+    - uses: mshick/add-pr-comment@v2
+      with:
+        message: |
+          ${{steps.coana-cli.outputs.markdown}}

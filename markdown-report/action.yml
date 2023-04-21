@@ -1,6 +1,5 @@
-# action.yml
-name: 'Coana'
-description: 'Run the Coana CLI tool'
+name: 'Coana Markdown Report'
+description: 'Run the Coana CLI tool and export the markdown report as outputs.markdown'
 outputs:
   markdown: # id of output
     description: 'Coana report markdown'
