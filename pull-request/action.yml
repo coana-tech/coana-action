@@ -5,7 +5,7 @@ runs:
   steps:
     - name: Run Coana CLI
       id: coana-cli
-      uses: coana-tech/coana-action/markdown-report@v6
+      uses: coana-tech/coana-action/markdown-report@v9
 
     # updates existing comment if it already exists
     - uses: mshick/add-pr-comment@v2
